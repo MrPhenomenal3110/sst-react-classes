@@ -19,7 +19,7 @@ function cartReducer(state = {items: {}}, action) {
 
   const product = action.payload;
   switch(action.type) {
-    case("ADD_TO_CART"):
+    case(ADD_TO_CART):
       if(state.items[product.id]) {
         return {
           ...state,
@@ -43,7 +43,7 @@ function cartReducer(state = {items: {}}, action) {
           }
         }
       }
-    case("REMOVE_FROM_CART"):
+    case(REMOVE_FROM_CART):
       if(state.items[product.id]) {
         if(state.items[product.id].quantity === 1) {
           return {
