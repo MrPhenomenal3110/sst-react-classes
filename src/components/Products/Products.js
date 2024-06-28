@@ -9,7 +9,7 @@ function Products() {
   console.log("products")
   console.log(useWindowSize());
   useEffect(() => {
-    fetch("https://run.mocky.io/v3/0912a49d-ab8c-4aa2-9363-d1d21fd3f66a").then(
+    fetch("https://fakestoreapi.com/products").then(
       (response) => {
         return response.json();
       }

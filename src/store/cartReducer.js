@@ -1,4 +1,3 @@
-import { createStore } from "redux";
 import { omit } from "lodash";
 
 const ADD_TO_CART = "ADD_TO_CART";
@@ -69,9 +68,7 @@ function cartReducer(state = {items: {}}, action) {
   }
 }
 
-const store = createStore(cartReducer);
-
-export default store;
+export default cartReducer;
 
 
 // action is an object 
